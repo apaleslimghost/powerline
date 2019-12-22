@@ -23,7 +23,10 @@
 	"eslintConfig": {
 		"extends": [
 			"@quarterto"
-		]
+		],
+		"globals": {
+			"atom": "readonly"
+		}
 	},
 	"prettier": "@quarterto/prettier",
 	"lint-staged": {
