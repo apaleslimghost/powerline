@@ -124,3 +124,12 @@
 		background: @background-color-success;
 	}
 }
+
+.tab-status-rotate::before {
+	@keyframes tab-status-rotate {
+		100% {
+			transform: rotate(360deg);
+		}
+	}
+	animation: tab-status-rotate 2s linear infinite;
+}
