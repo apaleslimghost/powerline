@@ -3,10 +3,14 @@
 .tab-bar .tab.tab-status {
 	display: flex;
 	padding: 0;
+	overflow: hidden;
 	border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .tab-status-item {
+	box-sizing: border-box;
+	flex-shrink: 0;
+
 	button& {
 		appearance: none;
 		background: transparent;
@@ -28,16 +32,30 @@
 
 	&.tab-status-item-primary,
 	button&:hover {
-		border: 0 none;
+		border-color: transparent;
 		background: rgba(255, 255, 255, 0.05);
 	}
 }
 
-.tab-status-item-right {
-	margin-left: auto;
+.tab-status-item-hidden {
+	display: none;
+}
 
-	& ~ .tab-status-item-right {
-		margin-left: 0;
+.tab-status-item-primary.tab-status-item-hidden {
+	display: block;
+	flex-shrink: 1;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.tab-status-item-right {
+	&:not(.tab-status-item-hidden) {
+		margin-left: auto;
+
+		& ~ .tab-status-item-right {
+			margin-left: 0;
+		}
 	}
 
 	&:not(:empty),
