@@ -1,8 +1,68 @@
+@import 'ui-variables';
+
 .tab-bar .tab.tab-status {
 	display: flex;
 	padding: 0;
+	border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-.tab .tab-status-items > * {
-	margin-left: 0.5rem;
+.tab-status-item {
+	button& {
+		appearance: none;
+		background: transparent;
+		border: 0 none;
+
+		transition: background 100ms linear;
+	}
+
+	&.icon::before,
+	.icon:only-child::before {
+		margin: 0;
+	}
+
+	&:not(:empty),
+	&.icon:empty {
+		padding: 0 1rem;
+		border-right: 1px solid rgba(255, 255, 255, 0.05);
+	}
+
+	&.tab-status-item-primary,
+	button&:hover {
+		border: 0 none;
+		background: rgba(255, 255, 255, 0.05);
+	}
+}
+
+.tab-status-item-right {
+	margin-left: auto;
+
+	& ~ .tab-status-item-right {
+		margin-left: 0;
+	}
+
+	&:not(:empty),
+	&.icon:empty {
+		border-right: 0 none;
+		border-left: 1px solid rgba(255, 255, 255, 0.05);
+	}
+}
+
+.tab-status-sub-item:not(:last-child) {
+	margin-right: 0.5rem;
+}
+
+.tab-status-vim {
+	border: 0 none;
+
+	&.tab-status-vim-insert {
+		background: @background-color-warning;
+	}
+
+	&.tab-status-vim-normal {
+		background: @background-color-info;
+	}
+
+	&.tab-status-vim-visual {
+		background: @background-color-success;
+	}
 }

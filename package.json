@@ -45,6 +45,11 @@
 			"versions": {
 				"0.3.0": "consumeDiagnosticUpdates"
 			}
+		},
+		"atom.file-icons": {
+			"versions": {
+				"1.0.0": "consumeIcons"
+			}
 		}
 	}
 }
