@@ -1,10 +1,34 @@
 @import 'ui-variables';
 
+.tab-bar {
+	order: 2;
+
+	atom-dock & {
+		order: 0;
+	}
+}
+
+.tab-status {
+	width: 100%;
+
+	&:not(.active) {
+		display: none !important;
+	}
+
+	atom-dock &:not(.active) {
+		display: block;
+	}
+}
+
 .tab-bar .tab.tab-status {
 	display: flex;
 	padding: 0;
 	overflow: hidden;
 	border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.tab-status .icon:not(.js-icon)::before {
+	vertical-align: -1px;
 }
 
 .tab-status-item {
@@ -18,9 +42,17 @@
 		padding: 0;
 	}
 
-	&.icon::before,
-	.icon:only-child::before {
+	&.icon::before {
 		margin: 0;
+	}
+
+	.icon::before {
+		margin-right: 0.25rem;
+	}
+
+	.icon-right::before {
+		margin-right: -0.5rem;
+		margin-left: 0.5rem;
 	}
 
 	&:not(:empty),
@@ -65,7 +97,7 @@
 }
 
 .tab-status-sub-item:not(:last-child) {
-	margin-right: 0.5rem;
+	margin-right: 0.75rem;
 }
 
 .tab-status-vim {
