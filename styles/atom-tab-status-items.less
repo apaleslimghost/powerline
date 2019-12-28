@@ -6,18 +6,22 @@
 	atom-dock & {
 		order: 0;
 	}
-}
 
-.tab {
-	width: 100%;
-	text-align: left !important;
+	.tab {
+		width: 100%;
+		text-align: left !important;
 
-	&:not(.active) {
-		display: none !important;
-	}
+		&.active {
+			border-top: 1px solid @tab-border-color;
+		}
 
-	atom-dock &:not(.active) {
-		display: block;
+		&:not(.active) {
+			display: none !important;
+		}
+
+		atom-dock &:not(.active) {
+			display: block;
+		}
 	}
 }
 
@@ -25,7 +29,6 @@
 	display: flex;
 	padding: 0;
 	overflow: hidden;
-	border-top: 1px solid @tab-border-color;
 }
 
 .tab-status .icon:not(.js-icon)::before {
