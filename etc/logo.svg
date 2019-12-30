@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="136px" height="36px" viewBox="0 0 136 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Rectangle</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" fill="#1BC600" fill-rule="nonzero" x="0" y="0" width="136" height="36"></rect>
+        <g id="Group" transform="translate(7.500000, 0.000000)" fill="#000000">
+            <text id="powerline" font-family="GalaxiePolaris-HeavyItalic, Galaxie Polaris" font-size="20" font-style="italic" font-weight="600">
+                <tspan x="20.8737367" y="25">powerline</tspan>
+            </text>
+            <polygon id="Combined-Shape" stroke="#000000" fill-rule="nonzero" points="8.57018741 20.1950388 0.106694228 20.1950388 10.112248 9.00668712 6.57018741 17.2049612 15.0336806 17.2049612 5.02812678 28.3933129"></polygon>
+        </g>
+    </g>
+</svg>

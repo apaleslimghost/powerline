@@ -1,5 +1,18 @@
-# atom-tab-status-items package
+<h1 align="center">
+	<img src="etc/logo.svg" width="400" alt="powerline">
+</h1>
 
-A short description of your package.
+what if [powerline](https://github.com/powerline/powerline) but for [Atom](https://atom.io)
 
-![A screenshot of your package](https://f.cloud.github.com/assets/69169/2290250/c35d867a-a017-11e3-86be-cd7c5bf3ff9b.gif)
+<img src="etc/screenshot.png" width="740" alt="screenshot">
+
+## features
+
+it replaces the tab bar in each pane with a status bar that does:
+
+- [vim-mode-plus](https://github.com/t9md/atom-vim-mode-plus) status
+- file name and modified
+- language select
+- [Atom IDE](https://ide.atom.io/) diagnostics status
+- git status
+- auto-hide sections that don't fit
