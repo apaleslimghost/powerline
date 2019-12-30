@@ -1,5 +1,5 @@
 {
-	"name": "powerline",
+	"name": "atom-powerline",
 	"main": "./lib/atom-tab-status-items",
 	"version": "1.0.0",
 	"description": "A short description of your package",
