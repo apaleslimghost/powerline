@@ -1,10 +1,13 @@
 {
-	"name": "atom-tab-status-items",
+	"name": "tab-status-items",
 	"main": "./lib/atom-tab-status-items",
 	"version": "0.0.0",
 	"description": "A short description of your package",
 	"keywords": [],
-	"repository": "https://github.com/atom/atom-tab-status-items",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/quarterto/atom-tab-status-items.git"
+	},
 	"license": "MIT",
 	"engines": {
 		"atom": ">=1.0.0 <2.0.0"
@@ -25,8 +28,20 @@
 		"extends": [
 			"@quarterto"
 		],
+		"env": {
+			"browser": true,
+			"node": true
+		},
 		"globals": {
 			"atom": "readonly"
+		},
+		"rules": {
+			"react/no-unknown-property": [
+				"error",
+				{
+					"ignore": "class"
+				}
+			]
 		}
 	},
 	"prettier": "@quarterto/prettier",
@@ -52,5 +67,16 @@
 				"1.0.0": "consumeIcons"
 			}
 		}
-	}
+	},
+	"bugs": {
+		"url": "https://github.com/quarterto/atom-tab-status-items/issues"
+	},
+	"homepage": "https://github.com/quarterto/atom-tab-status-items#readme",
+	"directories": {
+		"lib": "lib"
+	},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "Bren Brightwell <bren@153.io>"
 }
