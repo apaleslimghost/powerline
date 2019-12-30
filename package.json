@@ -1,12 +1,12 @@
 {
-	"name": "tab-status-items",
+	"name": "powerline",
 	"main": "./lib/atom-tab-status-items",
 	"version": "0.0.0",
 	"description": "A short description of your package",
 	"keywords": [],
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/quarterto/atom-tab-status-items.git"
+		"url": "git+https://github.com/quarterto/atom-powerline.git"
 	},
 	"license": "Parity-7.0.0",
 	"engines": {
@@ -69,9 +69,9 @@
 		}
 	},
 	"bugs": {
-		"url": "https://github.com/quarterto/atom-tab-status-items/issues"
+		"url": "https://github.com/quarterto/atom-powerline/issues"
 	},
-	"homepage": "https://github.com/quarterto/atom-tab-status-items#readme",
+	"homepage": "https://github.com/quarterto/atom-powerline#readme",
 	"directories": {
 		"lib": "lib"
 	},
