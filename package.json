@@ -6,7 +6,7 @@
 	"keywords": [],
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/quarterto/atom-powerline.git"
+		"url": "https://github.com/quarterto/powerline.git"
 	},
 	"license": "Parity-7.0.0",
 	"engines": {
@@ -69,9 +69,9 @@
 		}
 	},
 	"bugs": {
-		"url": "https://github.com/quarterto/atom-powerline/issues"
+		"url": "https://github.com/quarterto/powerline/issues"
 	},
-	"homepage": "https://github.com/quarterto/atom-powerline#readme",
+	"homepage": "https://github.com/quarterto/powerline#readme",
 	"directories": {
 		"lib": "lib"
 	},
