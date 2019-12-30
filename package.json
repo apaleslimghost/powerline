@@ -8,7 +8,7 @@
 		"type": "git",
 		"url": "git+https://github.com/quarterto/atom-tab-status-items.git"
 	},
-	"license": "MIT",
+	"license": "Parity-7.0.0",
 	"engines": {
 		"atom": ">=1.0.0 <2.0.0"
 	},
